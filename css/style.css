@@ -1,0 +1,52 @@
+.card {
+  margin: 10px;
+  padding: 10px;
+}
+
+footer {
+  background-color: #0B0227;
+}
+
+.footer {
+  height: 3rem;
+  display: flex;
+}
+
+
+.social {
+  width: 49%;
+  /* display: flex;
+  justify-content: flex-start; */
+}
+
+.legal {
+  width: 49%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fab {
+  font-size: 2rem;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.fa-facebook {
+  color: #3b5998
+}
+
+.fa-twitter-square {
+  color: #1da1f2;
+}
+
+.fa-instagram {
+ color: #bc2a8d;
+}
+.card-group {
+  margin-bottom: 2rem;
+}
+.footerLinks {
+  padding: 3px;
+  margin: 5px 10px;
+  font-weight: bold;
+}
