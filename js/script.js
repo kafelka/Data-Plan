@@ -1,16 +1,32 @@
-var gb_required;
-var frequency;
+var priceSelected;
+var total;
+var planFrequency;
 
 $(".my-activity").click(function(event) {
-  var total = 0;
   $(".my-activity:checked").each(function() {
-    total += parseInt($(this).val());
+    priceSelected = parseInt($(this).val());
+    $("#amount").val(priceSelected);
+  })
+});
+
+$(".my-frequency").click(function(e){
+  $(".my-frequency:checked").each(function(){
+    planFrequency = $(this).val();
   });
 
-  if (total == 0) {
-    $("#amount").val("");
+  if(planFrequency === "monthly") {
+    total = priceSelected;
   } else {
-    $("#amount").val(total);
+    total = priceSelected * 12;
   }
-}
+  $("#amount").val(total);
 });
+
+$(".btn-success").click(function(e) {
+    $("#amount").val("");
+})
+
+
+
+
+// parseInt($(this).val());
