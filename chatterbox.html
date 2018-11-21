@@ -42,7 +42,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-10">
-        <h1>Lone Wolf</h1>
+        <h1>Chatterbox</h1>
       </div>
       <!--/.col-md-8 (the forward slash denotes closing the column)-->
       <div class="col-md-4">
@@ -56,7 +56,6 @@
 </header><!-- .jumbotron -->
 
 
-
 <main class="container-fluid main-wolf">
   <div class="box">
     <div class="innerbox">
@@ -66,20 +65,20 @@
 
           <form>
             <div class="form-check">
-              <input class="my-activity" type="radio" id="3gb" name="activity['data']" value="15">
-              <label for="3gb">3GB (£15)</label>
+              <input class="my-giga" type="radio" id="1gb" name="activity['data']" value="14">
+              <label for="3gb">1GB (£14)</label>
             </div>
             <div class="form-check">
-              <input class="my-activity" type="radio" id="6gb" name="activity['data']" value="17">
-              <label for="6gb">6GB (£17)</label>
+              <input class="my-giga" type="radio" id="6gb" name="activity['data']" value="18">
+              <label for="6gb">6GB (£18)</label>
             </div>
             <div class="form-check">
-              <input class="my-giga" type="radio" id="15gb" name="activity['data']" value="22">
-              <label for="15gb">15GB (£22)</label>
+              <input class="my-giga" type="radio" id="10gb" name="activity['data']" value="20">
+              <label for="15gb">10GB (£20)</label>
             </div>
             <div class="form-check">
-              <input class="my-activity" type="radio" id="30gb" name="activity['data']" value="27">
-              <label for="30gb">30GB (£27)</label>
+              <input class="my-giga" type="radio" id="20gb" name="activity['data']" value="30">
+              <label for="30gb">20GB (£30)</label>
             </div>
           </form>
 
@@ -92,16 +91,44 @@
 
           <form>
             <div class="form-check">
-              <input class="my-frequency" type="radio" name="frequency" value="1">
+              <input class="my-frequency" type="radio" name="frequency" id="1m" value="1">
               <label for="1m">Monthly</label>
             </div>
             <div class="form-check">
-              <input class="my-frequency" type="radio" name="frequency" value="12">
+              <input class="my-frequency" type="radio" name="frequency" id="12m" value="12">
               <label for="12m">Annually</label>
             </div>
           </form>
         </div>
       </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">How many minutes do you need?</h5>
+
+          <form>
+            <div class="form-check">
+              <input class="my-minutes" type="radio" name="minutes" id="180m" value="180min" data-price="3">
+              <label for="180m">180 minutes (£3)</label>
+            </div>
+            <div class="form-check">
+              <input class="my-minutes" type="radio" name="minutes" id="300m" value="300min" data-price="5">
+              <label for="300m">300 minutes (£5)</label>
+            </div>
+            <div class="form-check">
+              <input class="my-minutes" type="radio" name="minutes" id="600m" value="600min" data-price="10">
+              <label for="600m">600 minutes (£10)</label>
+            </div>
+            <div class="form-check">
+              <input class="my-minutes" type="radio" name="minutes" id="unlimited" value="unlimited" data-price="12">
+              <label for="unlimited">Unlimited (£12)</label>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+
 
           <form>
             <div class="form-row align-items-center">
@@ -115,7 +142,7 @@
             </div>
           </form>
 
-      <button type="button" class="btn btn-success">BUY</button>
+      <button type="button" class="btn btn-success">reset</button>
     </div>
   </div>
 </main>
