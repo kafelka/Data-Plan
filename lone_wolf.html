@@ -42,7 +42,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-10">
-        <p>Our best value package for those who just need data on the go. Choose from our monthly or annual price plans.</p>
+        <h1>Lone Wolf</h1>
       </div>
       <!--/.col-md-8 (the forward slash denotes closing the column)-->
       <div class="col-md-4">
@@ -55,37 +55,65 @@
   <!--this closes the container div-->
 </header><!-- .jumbotron -->
 
-<main class="container-fluid">
-  <h2>What package is right for you?</h2>
-  <div class="card-group">
-    <div class="card card-one">
-      <img class="card-img-top" src="images/raccoon.jpg" alt="Package one." />
-      <div class="card-body text-center">
-        <p>
-          Our best value package for those who just need data on the go. Choose from our monthly or annual price plans.
-        </p>
-        <a href="lonewolf.html" class="btn btn-info">from £15</a>
-      </div>
-    </div>
+<main class="container-fluid main-wolf">
+  <div class="box">
+    <div class="innerbox">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">How many GB do you need?</h5>
 
-    <div class="card card-two">
-      <img class="card-img-top" src="images/raccoon.jpg" alt="Package two.">
-      <div class="card-body text-center">
-        <p>
-          Keep in touch with all your friends and enjoy unlimited minutes with our Chatterbox plan.
-        </p>
-        <a href="chatterbox.html" class="btn btn-info">from £17</a>
-      </div>
-    </div>
+          <form>
+            <div class="form-check">
+              <input class="my-activity" type="radio" id="3gb" name="activity['data']" value="15">
+              <label for="3gb">3GB (£15)</label>
+            </div>
+            <div class="form-check">
+              <input class="my-activity" type="radio" id="6gb" name="activity['data']" value="17">
+              <label for="6gb">6GB (£17)</label>
+            </div>
+            <div class="form-check">
+              <input class="my-activity" type="radio" id="15gb" name="activity['data']" value="22">
+              <label for="15gb">15GB (£22)</label>
+            </div>
+            <div class="form-check">
+              <input class="my-activity" type="radio" id="30gb" name="activity['data']" value="27">
+              <label for="30gb">30GB (£27)</label>
+            </div>
+          </form>
 
-    <div class="card card-three">
-      <img class="card-img-top" src="images/raccoon.jpg" alt="Package three.">
-      <div class="card-body text-center">
-        <p>
-           A complete package for families. We're offering unlimited minutes, multiple sims, and up to 40GB of data.
-        </p>
-        <a href="family.html" class="btn btn-info">from £14</a>
+
+        </div>
       </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">How would you like to pay?</h5>
+
+          <form>
+            <div class="form-check">
+              <input class="my-activity" type="radio" id="1m" name="frequency" value="1">
+              <label for="1m">Monthly</label>
+            </div>
+            <div class="form-check">
+              <input class="my-activity" type="radio" id="12m" name="frequency" value="12">
+              <label for="12m">Annually</label>
+            </div>
+          </form>
+        </div>
+      </div>
+
+          <form>
+            <div class="form-row align-items-center">
+              <h5>Amount (£):
+                <!-- <input type="text" name="amount" id="amount" /> -->
+              </h5>
+              <div class="col-auto">
+                <label class="sr-only" for="total">Name</label>
+                <input type="text" class="form-control mb-2" id="amount" placeholder="total">
+              </div>
+            </div>
+          </form>
+
+      <button type="button" class="btn btn-success">BUY</button>
     </div>
   </div>
 </main>

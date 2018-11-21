@@ -1,20 +1,30 @@
+.card-group {
+  margin-bottom: 2rem;
+}
+
 .card {
   margin: 10px;
   padding: 10px;
 }
 
-footer {
-  background-color: #0B0227;
-}
-
 .footer {
+  background-color: #B9B8BE;
   height: 3rem;
   display: flex;
 }
 
+@media only screen and (max-width: 600px) {
+  .footer {
+    height: 2rem;
+  }
+}
 
 .social {
   width: 49%;
+  display: flex;
+  align-items: center;
+  margin-left: 2px;
+  margin-right: 2px;
   /* display: flex;
   justify-content: flex-start; */
 }
@@ -23,12 +33,20 @@ footer {
   width: 49%;
   display: flex;
   justify-content: flex-end;
+  vertical-align: middle;
 }
 
 .fab {
   font-size: 2rem;
   margin: 5px;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .fab {
+    font-size: 1.5rem;
+    margin: 3px;
+  }
 }
 
 .fa-facebook {
@@ -42,11 +60,52 @@ footer {
 .fa-instagram {
  color: #bc2a8d;
 }
-.card-group {
-  margin-bottom: 2rem;
-}
+
 .footerLinks {
-  padding: 3px;
+  padding: 2px;
   margin: 5px 10px;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .footerLinks {
+    margin: 3px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  footer .footer {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+.main-wolf {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  border: 1px solid black;
+  background-color: #B9B8BE;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerbox {
+  border: 1px solid green;
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.form-check {
+  align-items: flex-start;
 }
