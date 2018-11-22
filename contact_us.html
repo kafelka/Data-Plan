@@ -2,7 +2,7 @@
 <html lang="en-GB">
 
 <head>
-  <title class='main-headings'> homepage </title>
+  <title class='main-headings'> contact us </title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
@@ -14,7 +14,7 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#"><img src="images/logo100.png" alt="Logo image"/></a>
+  <a class="navbar-brand" href="#"><img src="images/logo100.png" alt="Logo image" /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     <!--image/logo to go in place of link-->
@@ -39,106 +39,93 @@
   </div>
 </nav>
 
-<header class="jumbotron">
+<header class="jumbotron contact_us" >
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-10">
-        <h1>Lone Wolf</h1>
+        <h1>Contact us</h1>
       </div>
       <!--/.col-md-8 (the forward slash denotes closing the column)-->
       <div class="col-md-4">
-
       </div><!-- /.col-md-4-->
     </div> <!-- this div closes the row of jumbotron-->
-
-
   </div>
   <!--this closes the container div-->
 </header><!-- .jumbotron -->
 
 
-
-<main class="container-fluid main-wolf">
-  <div class="box">
-    <div class="innerbox">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">How many gigabytes do you need?</h5>
-
-          <form>
-            <div class="form-check">
-              <input class="my-activity" type="radio" id="3gb" name="activity['data']" value="15">
-              <label for="3gb">3GB (£15)</label>
-            </div>
-            <div class="form-check">
-              <input class="my-activity" type="radio" id="6gb" name="activity['data']" value="17">
-              <label for="6gb">6GB (£17)</label>
-            </div>
-            <div class="form-check">
-              <input class="my-giga" type="radio" id="15gb" name="activity['data']" value="22">
-              <label for="15gb">15GB (£22)</label>
-            </div>
-            <div class="form-check">
-              <input class="my-activity" type="radio" id="30gb" name="activity['data']" value="27">
-              <label for="30gb">30GB (£27)</label>
-            </div>
-          </form>
-
-
+<main class="container-fluid contact_us_form">
+  <!-- <div class="box"> -->
+    <div class="card w-75">
+      <div class="card-body">
+        <h4 class="card-title pb-4">Contact Us</h4>
+        <div>
+          <p class="lead pb-3">
+            Need to contact us for any reason? Fill in the form below and we'll get back to you as soon as we can!</p>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">How would you like to pay?</h5>
 
-          <form>
-            <div class="form-check">
-              <input class="my-frequency" type="radio" name="frequency" value="1">
-              <label for="1m">Monthly</label>
-            </div>
-            <div class="form-check">
-              <input class="my-frequency" type="radio" name="frequency" value="12">
-              <label for="12m">Annually</label>
-            </div>
-          </form>
-        </div>
-      </div>
 
-          <form>
-            <div class="form-row align-items-center">
-              <h5>Amount (£):
-                <!-- <input type="text" name="amount" id="amount" /> -->
-              </h5>
-              <div class="col-auto">
-                <label class="sr-only" for="total">Name</label>
-                <input type="text" class="form-control mb-2" id="amount" placeholder="total">
+        <form>
+          <div>
+
+            <div class="row">
+              <div class="col-md-10">
+                <div class="form-group">
+                  <label for="form_name">First name *</label>
+                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name *">
+                </div>
               </div>
             </div>
-          </form>
+          </div>
+          <div class="row">
+            <div class="col-md-10">
+              <div class="form-group">
+                <label for="form_email">Email *</label>
+                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *">
+              </div>
+            </div>
 
-      <button type="button" class="btn btn-success">BUY</button>
+          </div>
+          <div class="row">
+            <div class="col-md-10">
+              <div class="form-group">
+                <label for="form_message">Message *</label>
+                <textarea id="form_message" name="message" class="form-control" placeholder="Please leave us a message*" rows="6"></textarea>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <input type="submit" class="btn btn-info btn-send" value="Send message">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
+  <!-- </div> -->
 </main>
 
 <footer>
   <div class="container-fluid footer">
     <div class="social">
       <a href="https://facebook.com"><i class="fab fa-facebook"></i>
-      <a href="https://instagram.com"><i class="fab fa-instagram"></i>
-      <a href="https://twitter.com"><i class="fab fa-twitter-square"></i>
+        <a href="https://instagram.com"><i class="fab fa-instagram"></i>
+          <a href="https://twitter.com"><i class="fab fa-twitter-square"></i>
     </div>
     <div class="legal">
-      <a href='#'class="footerLinks">About</a>
-      <a href='#'class="footerLinks">Legal</a>
-      <a href='#'class="footerLinks">Privacy</a>
-      <a href='#'class="footerLinks">Sitemap</a>
+      <a href='#' class="footerLinks">About</a>
+      <a href='#' class="footerLinks">Legal</a>
+      <a href='#' class="footerLinks">Privacy</a>
+      <a href='#' class="footerLinks">Sitemap</a>
     </div>
 
 </footer>
 
 <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
 <script src="js/script.js"></script>
+
+</html>

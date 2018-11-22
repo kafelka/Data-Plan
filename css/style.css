@@ -9,9 +9,10 @@ body {
   font-family: 'Happy Monkey', cursive;
 }
 
-h1 {
+.h1 {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
   color: #926890;
   font-family: 'Happy Monkey', cursive;
 }
@@ -256,4 +257,29 @@ font-size: 20px !important;
 /*--for IE10 support--*/
 :-ms-input-placeholder {
 font-size: 20px !important;
+}
+
+.contact_us {
+    margin-bottom: 0px;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background-size: auto 100%;
+
+}
+
+.contact_us_form {
+  display: flex;
+  justify-content: center;
+}
+
+.jumbotron-chatter {
+  background-image: url(../images/urban-raccoons-fence.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  background-position: 50% 44%;
+  display: flex;
 }
