@@ -3,7 +3,6 @@ var total = 0;
 var planFrequency = 1;
 var priceMinutes = 0;
 
-
 function calculate() {
   total = (priceGB + priceMinutes) * planFrequency;
   $("#amount").val(total);
@@ -12,7 +11,6 @@ function calculate() {
 $(".my-giga").click(function(event) {
   $(".my-giga:checked").each(function() {
     priceGB = parseInt($(this).val());
-    // $("#amount").val(priceGB);
   });
   calculate();
 });
@@ -22,12 +20,6 @@ $(".my-frequency").click(function(e){
     planFrequency = parseInt($(this).val());
   });
   calculate();
-  // if(planFrequency === "monthly") {
-  //   total = priceGB;
-  // } else {
-  //   total = priceGB * 12;
-  // }
-  // $("#amount").val(total);
 });
 
 $(".my-minutes").click(function(e){
@@ -36,30 +28,7 @@ $(".my-minutes").click(function(e){
     priceMinutes = parseInt($(this).data('price'));
   });
   calculate();
-
   });
-
-  // if ((planFrequency === "monthly") && (priceMinutes === "180min")) {
-  //   total = priceGB + priceMinutesPrice;
-  // } else if ((planFrequency === "monthly") && (priceMinutes === "300min")) {
-  //   total = priceGB + priceMinutesPrice;
-  // } else if ((planFrequency === "monthly") && (priceMinutes === "600min")) {
-  //   total = priceGB + priceMinutesPrice;
-  // } else if ((planFrequency === "monthly") && (priceMinutes === "unlimited")) {
-  //   total = priceGB + priceMinutesPrice;
-  // } else if ((planFrequency === "annually") && (priceMinutes === "180min")) {
-  //   total = ((priceGB + priceMinutesPrice) * 12);
-  // } else if ((planFrequency === "annually") && (priceMinutes === "300min")) {
-  //   total = ((priceGB + priceMinutesPrice) * 12);
-  // } else if ((planFrequency === "annually") && (priceMinutes === "600min")) {
-  //   total = ((priceGB + priceMinutesPrice) * 12);
-  // } else {
-  //   total = ((priceGB + priceMinutesPrice) * 12);
-  // }
-
-
-// $("#amount").val(total);
-
 
 $(".btn-success").click(function(e) {
   priceGB = 0;
@@ -71,5 +40,4 @@ $(".btn-success").click(function(e) {
   $("input[type=radio]:checked").each(function(e){
     $(this).prop("checked", false);
   })
-
 });
