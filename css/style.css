@@ -2,21 +2,29 @@ body {
   font-size: 1.5rem;
 }
 
-.jumbotron {
-  background-color: rgba(178, 227, 232, 0.7);
+/* .jumbotron {
+} */
+
+.jumbotron p {
+  font-family: 'Happy Monkey', cursive;
 }
 
-h2 {
+h1 {
   display: flex;
   justify-content: center;
+  color: #926890;
+  font-family: 'Happy Monkey', cursive;
 }
 .card-img-top {
   padding: 1rem;
+  /* border: 1px solid #926890; */
+  /* border: 1px solid #8E88B5; */
 }
 
 nav {
   background-color: #E6E2DF;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  font-family: 'Happy Monkey', cursive;
 }
 
 .card-group {
@@ -44,6 +52,7 @@ nav {
 .card {
   margin: 10px;
   padding: 10px;
+  border: 2px solid #8E88B5;
 }
 
 .card-pkg {
@@ -53,7 +62,21 @@ nav {
 @media only screen and (max-width: 1100px) {
   .card-pkg {
     width: 70%;
+    margin-bottom: 1rem;
   }
+}
+
+.btn-info {
+  background-color: #CCFC92;
+  color: black;
+  border: 1px solid #CCFC92;
+}
+
+.btn-info:hover {
+  background-color: #CCFC92;
+  border: 1px solid #CCFC92;
+  color: black;
+  padding: 1rem 1.5rem;
 }
 
 .footer {
@@ -114,9 +137,14 @@ nav {
 .footerLinks {
   padding: 2px;
   margin: 5px 10px;
-  font-weight: bold;
+  /* font-weight: bold; */
   display: flex;
   align-items: center;
+}
+
+.footerLinks:hover {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 600px) {
@@ -132,10 +160,13 @@ nav {
   }
 }
 
+
 .main {
+  background-color: rgba(178, 227, 232, 0.5);
   display: flex;
   justify-content: center;
   width: 90vw;
+  padding: 2rem;
 }
 
 .box {
@@ -149,7 +180,7 @@ nav {
 
 .innerbox {
   border: 1px solid green;
-  background-color: white;
+  background-color: #CCFC92;
   width: 80%;
   display: flex;
   flex-wrap: wrap;
