@@ -16,15 +16,23 @@ body {
 
 .h1 {
   font-size: 3rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  color: #926890;
-  color: black;
+  /* color: #926890; */
+  /* color: black; */
+  color: white;
   font-family: 'Happy Monkey', cursive;
   margin-bottom: 1rem;
-  text-shadow: 1px 1px 2px white;
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: 2px;
 }
+
+.h1-chatter {
+  font-size: 3rem;
+}
+
+ .h1-main {
+   text-align: center;
+   color: #926890;
+ }
 
 .card-img-top {
   padding: 1rem;
@@ -57,7 +65,7 @@ nav {
 }
 
 .card-body-pkg {
-  padding: 1rem;
+  padding: 0.8rem;
 }
 
 .card {
@@ -77,6 +85,15 @@ nav {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .card-pkg {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+
+
 .btn {
   text-transform: uppercase;
   font-weight: bold;
@@ -94,6 +111,13 @@ nav {
   color: black;
   padding: 1rem 2.7rem;
 }
+
+@media only screen and (max-width: 900px) {
+  .btn-info.btn-lg{
+    padding: 0.4rem 1.5rem;
+  }
+}
+
 
 .btn-chatter {
   margin-top: 2rem;
@@ -190,10 +214,13 @@ nav {
   justify-content: center;
   width: 90vw;
   padding: 2rem;
+  border-radius: 5px;
 }
 
 .innerbox p {
   font-family: 'Happy Monkey', cursive;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .box {
@@ -227,6 +254,18 @@ nav {
   }
 }
 
+@media only screen and (max-width: 720px) {
+  .innerbox {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .main {
+    margin: 0;
+    width: 100%;
+  }
+}
+
 .card-gb, .card-minutes {
   width: 40%;
   margin-top: 2rem;
@@ -242,9 +281,19 @@ nav {
   }
 }
 
-.form-inline .form-control {
-  width: 45%;
+.card-gb-lone {
+  width: 70%;
 }
+
+@media only screen and (max-width: 600px) {
+  .card-gb, .card-minutes, .card-freq, card-gb-lone {
+    width: 100%;
+  }
+}
+
+
+
+
 
 .btn-lg {
   margin-bottom: 2%;
@@ -256,21 +305,49 @@ nav {
 .form-b {
   display: flex;
   justify-content: center;
-  width: 70%;
-  margin-right: 15%;
-  margin-left: 15%;
+  width: 73%;
+  margin-right: 14%;
+  margin-left: 14%;
+}
+
+@media only screen and (max-width: 900px) {
+  .form-b {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .form-b {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 #amount {
   width: 100px;
-  height: 34px;
+  height: 38px;
   margin-right: 20px;
+}
+
+@media only screen and (max-width: 575px) {
+  #amount {
+    height: 34px;
+  }
 }
 
 h3 {
   margin: 0 15px;
+  height: 38px
 }
 
+@media only screen and (max-width: 575px) {
+  h3 {
+    font-size: 1.25rem;
+  }
+}
 
 
 .btn-success {
@@ -300,26 +377,38 @@ font-size: 20px !important;
 
 .contact_us {
     margin-bottom: 0px;
-    background-image: url(../images/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #CCFC92;
+    height: 180px;
     color: white;
     text-shadow: black 0.3em 0.3em 0.3em;
-    background-size: auto 100%;
+    font-size: 2.5rem;
+    color: #926890;
+    color: black;
+    font-family: 'Happy Monkey', cursive;
+}
 
+@media only screen and (max-width: 600px) {
+  .img-contact {
+    display: none;
+  }
+
+  .contact_us {
+    height: 125px;
+  }
 }
 
 .contact_us_form {
   display: flex;
   justify-content: center;
+  background-color: #008B96;
 }
 
 .jumbotron-chatter {
-  background-image: url(../images/urban-raccoons-fence.jpg);
+  background-image: url(../images/urban-raccoons-fence_2018-07-03.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 350px;
-  background-position: 50% 44%;
+  background-position: 50% 46%;
   display: flex;
   margin-bottom: 1rem;
 }
@@ -343,6 +432,49 @@ font-size: 20px !important;
   display: flex;
   margin-bottom: 1rem;
 }
+
+.jumbotron-family {
+  background-image: url(../images/family2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  background-position: 40% 52%;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-family: 'Happy Monkey', cursive;
+  color: #926890;
+}
+
+
+@media only screen and (max-width: 720px) {
+  .form-check {
+    font-size: 1.25rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+  }
+  .jumbotron-chatter, .jumbotron-main, .jumbotron-lonewolf {
+    height: 220px;
+  }
+
+  .h1-main {
+    font-size: 1.75rem;
+  }
+
+  .jumbotron p {
+    font-size: 1rem;
+  }
+
+  .card-body {
+    font-size: 1.25rem;
+  }
+}
+
 
 .collapse {
   display: flex;
