@@ -52,14 +52,17 @@ $(".my-minutes").click(function(e){
   calculate();
   });
 
-$(".btn-success").click(function(e) {
-  priceGB = 0;
-  total = 0;
-  planFrequency = 1;
-  priceMinutes = 0;
+  $(".btn-success").click(function(e) {
+    priceGB = 0;
+    total = 0;
+    planFrequency = 1;
+    priceMinutes = 0;
+    familyTotal = 0;
+    numberOfSims = 0;
 
-  $("#amount").val("");
-  $("input[type=radio]:checked").each(function(e){
-    $(this).prop("checked", false);
-  })
-});
+    $("#amount").val("");
+    $("#summary").val("");
+    $("input[type=radio]:checked").each(function(e){
+      $(this).prop("checked", false);
+    })
+  });
