@@ -30,6 +30,13 @@ $(".my-giga").click(function(event) {
   calculate();
 });
 
+$(".my-sim").click(function(e){
+  $(".my-sim:checked").each(function(){
+    numberOfSims = parseInt($(this).val());
+  });
+  calculate();
+});
+
 $(".my-frequency").click(function(e){
   $(".my-frequency:checked").each(function(){
     planFrequency = parseInt($(this).val());
