@@ -2,6 +2,15 @@ var priceGB = 0;
 var total = 0;
 var planFrequency = 1;
 var priceMinutes = 0;
+var familyTotal = 0;
+var numberOfSims = 0;
+
+var family = [
+  [14.00, 21.20, 28.40, 35.60, 42.80],
+  [20.00, 32.00, 44.00, 56.00, 68.00],
+  [30.00, 50.00, 70.00, 90.00, 110.00],
+  [40.00, 68.00, 96.00, 124.00, 152.00]
+]
 
 function calculate() {
   total = (priceGB + priceMinutes) * planFrequency;
