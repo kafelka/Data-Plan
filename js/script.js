@@ -13,8 +13,14 @@ var family = [
 ]
 
 function calculate() {
-  total = (priceGB + priceMinutes) * planFrequency;
-  $("#amount").val(total);
+  // if #summary.length == 1 it means that the element exists, if 0, does not exist
+  if ($("#summary").length){
+    familyTotal = family[priceGB][numberOfSims] * planFrequency;
+    $("#summary").val(familyTotal);
+  } else {
+    total = (priceGB + priceMinutes) * planFrequency;
+    $("#amount").val(total);
+  }
 }
 
 $(".my-giga").click(function(event) {
